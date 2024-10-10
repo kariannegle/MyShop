@@ -1,0 +1,50 @@
+{
+  "Version": 1,
+  "Hash": "aAG33Pz92Z8/AX4Vurot7B9guvJ5AlZ2eQuRVuyr408=",
+  "Source": "MyShop",
+  "BasePath": "_content/MyShop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MyShop.styles.css",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "MyShop.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MyShop.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyShop.bundle.scp.css",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "MyShop.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyShop.bundle.scp.css"
+    }
+  ]
+}
