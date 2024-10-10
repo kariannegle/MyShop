@@ -28,3 +28,4 @@ C:\Users\karia\ITPE3200\ShopMVC\MyShop\obj\Debug\net8.0\MyShop.RazorAssemblyInfo
 C:\Users\karia\ITPE3200\ShopMVC\MyShop\bin\Debug\net8.0\MyShop.staticwebassets.runtime.json
 C:\Users\karia\ITPE3200\ShopMVC\MyShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\karia\ITPE3200\ShopMVC\MyShop\obj\Debug\net8.0\scopedcss\projectbundle\MyShop.bundle.scp.css
+C:\Users\karia\ITPE3200\ShopMVC\MyShop\obj\Debug\net8.0\MyShop.sourcelink.json
