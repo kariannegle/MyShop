@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop.csproj": {}
+    "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\MyShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop.csproj": {
+    "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\MyShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop.csproj",
+        "projectUniqueName": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\MyShop.csproj",
         "projectName": "MyShop",
-        "projectPath": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop.csproj",
+        "projectPath": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\MyShop.csproj",
         "packagesPath": "C:\\Users\\karia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\obj\\",
+        "outputPath": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karia\\AppData\\Roaming\\NuGet\\NuGet.Config"

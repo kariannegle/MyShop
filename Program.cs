@@ -10,6 +10,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage(); // Maps the deafult controller route for the application
 }
 
+app.UseStaticFiles(); // Middleware that serves static files (images, css, etc.)
+
 app.MapDefaultControllerRoute(); // Handles the routing of incoming requests
 
 // app.MapControllerRoute(
