@@ -1,5 +1,8 @@
 @model IEnumerable<MyShop.Models.Item>
 
+<h1>List og Shop Items (@ViewBag.CurrentViewName View)</h1> <!-- displays the title of the view, including a dynamic part -->
+<a href="/Item/Grid">Table View</a>
+
         <div class="container">
             <h1>@ViewBag.CurrentViewName</h1>
             <table class='table table-striped'>
@@ -10,7 +13,7 @@
                         <td>@item.ItemId</td>
                         <td>@item.Name</td>
                         <td>@item.Price.ToString("0.00 NOK")</td>
-                        <td></td>
+                        <td>@item.Description</td>
                     </tr>
                 }
             </table>
