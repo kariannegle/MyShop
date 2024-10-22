@@ -1,23 +1,26 @@
-@model IEnumerable<MyShop.Models.Item>
+@model ItemsViewModel
 
-<h1>List og Shop Items (@ViewBag.CurrentViewName View)</h1> <!-- displays the title of the view, including a dynamic part -->
-<a href="/Item/Grid">Table View</a>
+<h1>List of Shop Items (@Model.CurrentViewName View)</h1>
+<a href="/Item/Grid">Grid View</a>
 
-        <div class="container">
-            <h1>@ViewBag.CurrentViewName</h1>
-            <table class='table table-striped'>
-                <tr><th>Id</th><th>Name</th><th>Price</th><th>Description</th></tr>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.ItemId</td>
-                        <td>@item.Name</td>
-                        <td>@item.Price.ToString("0.00 NOK")</td>
-                        <td>@item.Description</td>
-                    </tr>
-                }
-            </table>
-        </div>
-
+<div class="container">
+    <table class='table table-striped'>
+        <tr><th>Id</th><th>Name</th><th>Price</th><th>Description</th></tr>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.ItemId</td>
+                <td>
+                    <a asp-controller="Item"
+                        asp-action="Details"
+                        asp-route-id="@item.ItemId">@item.Name</a>
+                </td>
+                <td>@item.Price.ToString("0.00 NOK")</td>
+                <td>@item.Description</td>
+                <td></td>
+            </tr>
+        }
+    </table>
+</div>
     
 

@@ -1,29 +1,32 @@
-// Purpose: Contains the ItemController class which is responsible for handling requests to the Item model.
-
-// using directive is used to include the System namespace in the file
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyShop.Models;
+using MyShop.ViewModels;
 
-namespace MyShop.Controllers; // namespace declaration
+namespace MyShop.Controllers;
 
 public class ItemController : Controller
 {
-    public IActionResult Table() // method that returns an IActionResult for Table
+    public IActionResult Table()
     {
         var items = GetItems();
-        ViewBag.CurrentViewName = "Table";
-        return View(items);
+        var itemsViewModel = new ItemsViewModel(items, "Table");
+        return View(itemsViewModel);
     }
 
-    public IActionResult Grid() // method that returns an IActionResult for Grid
+    public IActionResult Grid()
     {
         var items = GetItems();
-        ViewBag.CurrentViewName = "Grid";
-        return View(items);
+        var itemsViewModel = new ItemsViewModel(items, "Grid");
+        return View(itemsViewModel);
+    }
+    
+    public IActionResult Details(int id)
+    {
+        var items = GetItems();
+        var item = items.FirstOrDefault(i => i.ItemId == id);
+        if (item == null)
+            return NotFound();
+        return View(item);
     }
 
     public List<Item> GetItems()
