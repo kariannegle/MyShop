@@ -1,6 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using MyShop.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews(); // Add MVC services (components registered with ASP.NET) to the container
+
+builder.Services.AddDbContext<ItemDbContext>(options => {
+    options.UseSqlite(
+        builder.Configuration["ConnectionStrings:ItemDbContextConnection"]);
+});
 
 var app = builder.Build();
 
