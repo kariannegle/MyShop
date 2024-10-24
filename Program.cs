@@ -16,6 +16,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage(); // Maps the deafult controller route for the application
+    DBInit.Seed(app); // Seed the database with items
 }
 
 app.UseStaticFiles(); // Middleware that serves static files (images, css, etc.)
