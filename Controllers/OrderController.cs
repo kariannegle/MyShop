@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MyShop.Models;
+using MyShop.DAL;
 using Microsoft.EntityFrameworkCore;
 using MyShop.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
