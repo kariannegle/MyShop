@@ -1,6 +1,7 @@
 @model Item
 
 <form asp-action="Create">
+    <div asp-validation-summary="All" class="text-danger"></div>
     <div class="form-group">
         <label asp-for="Name"></label><span class="text-danger">*</span> <!-- asp-for is a tag helper in ASP.NET Core that helps with model binding and validation. Associates a form input element with a specific property of the model class -->
         <input asp-for="Name" class="form-control" />

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t6xHeN3JQtlJ7GFhvwq8/BEVdhl2JAETIH5OakeRvGs=",
+  "Hash": "fzmfkvdU9oArgA72anGjK8Th0qHs4vtxShKsjjhy8gg=",
   "Source": "MyShop",
   "BasePath": "_content/MyShop",
   "Mode": "Default",
@@ -243,6 +243,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\jquery.slim.js"
+    },
+    {
+      "Identity": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\wwwroot\\js\\jquery.validate.js",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\wwwroot\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "js/jquery.validate.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.validate.js"
+    },
+    {
+      "Identity": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\wwwroot\\js\\jquery.validate.unobtrusive.js",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\wwwroot\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "js/jquery.validate.unobtrusive.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.validate.unobtrusive.js"
     }
   ]
 }

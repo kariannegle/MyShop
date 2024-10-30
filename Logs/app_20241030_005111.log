@@ -1,0 +1,51 @@
+2024-10-30 00:51:13.665 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-30 00:51:13.881 +01:00 [INF] Now listening on: https://localhost:7022
+2024-10-30 00:51:13.885 +01:00 [INF] Now listening on: http://localhost:5057
+2024-10-30 00:51:13.892 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 00:51:13.897 +01:00 [INF] Hosting environment: Development
+2024-10-30 00:51:13.900 +01:00 [INF] Content root path: C:\Users\karia\ITPE3200\ShopMVC\MyShop\MyShop
+2024-10-30 00:51:14.095 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/ - null null
+2024-10-30 00:51:14.129 +01:00 [INF] Executing endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-10-30 00:51:14.142 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyShop.Controllers.HomeController (MyShop).
+2024-10-30 00:51:14.154 +01:00 [INF] Executing ViewResult, running view Index.
+2024-10-30 00:51:14.231 +01:00 [INF] Executed ViewResult - view Index executed in 78.1338ms.
+2024-10-30 00:51:14.234 +01:00 [INF] Executed action MyShop.Controllers.HomeController.Index (MyShop) in 91.0707ms
+2024-10-30 00:51:14.234 +01:00 [INF] Executed endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-10-30 00:51:14.238 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/ - 200 null text/html; charset=utf-8 144.3865ms
+2024-10-30 00:51:14.248 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-10-30 00:51:14.255 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 6.2703ms
+2024-10-30 00:51:14.257 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-10-30 00:51:17.492 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Item/Table - null null
+2024-10-30 00:51:17.497 +01:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-10-30 00:51:17.507 +01:00 [INF] Route matched with {action = "Table", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller MyShop.Controllers.ItemController (MyShop).
+2024-10-30 00:51:17.643 +01:00 [INF] Executing ViewResult, running view Table.
+2024-10-30 00:51:17.665 +01:00 [INF] Executed ViewResult - view Table executed in 23.9865ms.
+2024-10-30 00:51:17.666 +01:00 [INF] Executed action MyShop.Controllers.ItemController.Table (MyShop) in 158.0199ms
+2024-10-30 00:51:17.666 +01:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-10-30 00:51:17.671 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Item/Table - 200 null text/html; charset=utf-8 178.7975ms
+2024-10-30 00:51:17.699 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-10-30 00:51:17.700 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 0.8418ms
+2024-10-30 00:51:17.700 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-10-30 00:51:19.719 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Item/Create - null null
+2024-10-30 00:51:19.724 +01:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Create (MyShop)'
+2024-10-30 00:51:19.730 +01:00 [INF] Route matched with {action = "Create", controller = "Item"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller MyShop.Controllers.ItemController (MyShop).
+2024-10-30 00:51:19.821 +01:00 [INF] Executing ViewResult, running view Create.
+2024-10-30 00:51:19.918 +01:00 [INF] Executed ViewResult - view Create executed in 98.8374ms.
+2024-10-30 00:51:19.918 +01:00 [INF] Executed action MyShop.Controllers.ItemController.Create (MyShop) in 187.861ms
+2024-10-30 00:51:19.919 +01:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Create (MyShop)'
+2024-10-30 00:51:19.919 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Item/Create - 200 null text/html; charset=utf-8 199.825ms
+2024-10-30 00:51:19.955 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-10-30 00:51:19.957 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 1.6297ms
+2024-10-30 00:51:19.958 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-10-30 00:51:21.594 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/Item/Create - application/x-www-form-urlencoded 218
+2024-10-30 00:51:21.595 +01:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Create (MyShop)'
+2024-10-30 00:51:21.631 +01:00 [INF] Route matched with {action = "Create", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyShop.Models.Item) on controller MyShop.Controllers.ItemController (MyShop).
+2024-10-30 00:51:21.718 +01:00 [WRN] [ItemController] Item creation failed {"ItemId":0,"Name":null,"Price":0,"Description":null,"ImageUrl":null,"OrderItems":null,"$type":"Item"}
+2024-10-30 00:51:21.722 +01:00 [INF] Executing ViewResult, running view Create.
+2024-10-30 00:51:21.728 +01:00 [INF] Executed ViewResult - view Create executed in 6.2844ms.
+2024-10-30 00:51:21.728 +01:00 [INF] Executed action MyShop.Controllers.ItemController.Create (MyShop) in 97.2981ms
+2024-10-30 00:51:21.728 +01:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Create (MyShop)'
+2024-10-30 00:51:21.729 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/Item/Create - 200 null text/html; charset=utf-8 135.0467ms
+2024-10-30 00:51:21.756 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-10-30 00:51:21.757 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 0.9823ms
+2024-10-30 00:51:21.758 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404

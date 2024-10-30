@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\js\\jquery.slim.js"
     },
     {
+      "Id": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\wwwroot\\js\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\karia\\ITPE3200\\ShopMVC\\MyShop\\MyShop\\wwwroot\\js\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.unobtrusive.js"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyShop.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
