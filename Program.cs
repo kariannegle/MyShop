@@ -2,10 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using MyShop.DAL;
 using Serilog;
 using Serilog.Events;
-using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("ItemDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ItemDbContextConnection' not found.");
 
 builder.Services.AddControllersWithViews();
 
@@ -14,12 +12,7 @@ builder.Services.AddDbContext<ItemDbContext>(options => {
         builder.Configuration["ConnectionStrings:ItemDbContextConnection"]);
 });
 
-builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ItemDbContext>();
-
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
-
-builder.Services.AddRazorPages(); // order of adding services does not matter
-builder.Services.AddSession(); // Middleware that enables session state
 
 var loggerConfiguration = new LoggerConfiguration()
     .MinimumLevel.Information() // levels: Trace< Information < Warning < Erorr < Fatal
@@ -43,17 +36,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles(); // Middleware that serves static files (images, css, etc.)
 
-app.UseSession(); // Middleware that enables session state
-
-app.UseAuthentication(); // Middleware that authenticates the user
-app.UseAuthorization(); // Middleware that authorizes the user
-
 app.MapDefaultControllerRoute(); // Handles the routing of incoming requests
 
 // app.MapControllerRoute(
 //     name: "default",
 //     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapRazorPages(); // Handles the routing of incoming requests
 
 app.Run(); // Middleware that runs the application
