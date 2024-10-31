@@ -4,6 +4,7 @@ using MyShop.DAL;
 using Microsoft.EntityFrameworkCore;
 using MyShop.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyShop.Controllers;
 

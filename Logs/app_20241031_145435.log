@@ -1,0 +1,7 @@
+2024-10-31 14:54:35.902 +01:00 [INF] Applying migration '20241031135118_IdentityAdded'.
+2024-10-31 14:54:35.947 +01:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "CustomerId" INTEGER NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Address" TEXT NOT NULL
+);
