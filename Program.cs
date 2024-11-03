@@ -36,10 +36,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseStaticFiles(); // Middleware that serves static files (images, css, etc.)
 
-app.MapDefaultControllerRoute(); // Handles the routing of incoming requests
+app.UseAuthentication(); // Middleware that authenticates the user
 
-// app.MapControllerRoute(
-//     name: "default",
-//     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapDefaultControllerRoute(); // Handles the routing of incoming requests
 
 app.Run(); // Middleware that runs the application
