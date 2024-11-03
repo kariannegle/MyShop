@@ -14,7 +14,36 @@ builder.Services.AddDbContext<ItemDbContext>(options => {
         builder.Configuration["ConnectionStrings:ItemDbContextConnection"]);
 });
 
-builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ItemDbContext>();
+//builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ItemDbContext>();
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+     // Password settings
+     options.Password.RequireDigit = true;
+     options.Password.RequiredLength = 8;
+     options.Password.RequireNonAlphanumeric = true;
+     options.Password.RequireUppercase = true;
+     options.Password.RequireLowercase = true;
+     options.Password.RequiredUniqueChars = 6;
+
+     // Lockout settings
+     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(60);
+     options.Lockout.MaxFailedAccessAttempts = 5;
+     options.Lockout.AllowedForNewUsers = true;
+
+     // User settings
+     options.User.RequireUniqueEmail = true;
+
+     // Sign-in settings
+     options.SignIn.RequireConfirmedAccount = false; // Set to true if you want email confirmation
+ })
+ .AddEntityFrameworkStores<ItemDbContext>()
+ .AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(options =>
+ {
+     options.LoginPath = "/Identity/Account/Login"; // Ensure this path is valid
+ });
 
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
 
