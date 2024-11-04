@@ -1,0 +1,108 @@
+2024-11-03 23:31:35.225 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-03 23:31:35.398 +01:00 [INF] Now listening on: https://localhost:7022
+2024-11-03 23:31:35.399 +01:00 [INF] Now listening on: http://localhost:5057
+2024-11-03 23:31:35.404 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 23:31:35.406 +01:00 [INF] Hosting environment: Development
+2024-11-03 23:31:35.408 +01:00 [INF] Content root path: C:\Users\karia\ITPE3200\ShopMVC\MyShop\MyShop
+2024-11-03 23:31:35.642 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/ - null null
+2024-11-03 23:31:35.682 +01:00 [INF] Executing endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-11-03 23:31:35.689 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyShop.Controllers.HomeController (MyShop).
+2024-11-03 23:31:35.706 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-03 23:31:35.847 +01:00 [INF] Executed ViewResult - view Index executed in 146.9518ms.
+2024-11-03 23:31:35.850 +01:00 [INF] Executed action MyShop.Controllers.HomeController.Index (MyShop) in 160.272ms
+2024-11-03 23:31:35.851 +01:00 [INF] Executed endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-11-03 23:31:35.858 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/ - 200 null text/html; charset=utf-8 217.0022ms
+2024-11-03 23:31:35.875 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:35.882 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 7.4034ms
+2024-11-03 23:31:35.892 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-11-03 23:31:45.495 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Item/Table - null null
+2024-11-03 23:31:45.504 +01:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-11-03 23:31:45.518 +01:00 [INF] Route matched with {action = "Table", controller = "Item", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller MyShop.Controllers.ItemController (MyShop).
+2024-11-03 23:31:45.692 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-03 23:31:45.748 +01:00 [INF] Executed ViewResult - view Table executed in 58.722ms.
+2024-11-03 23:31:45.749 +01:00 [INF] Executed action MyShop.Controllers.ItemController.Table (MyShop) in 230.0959ms
+2024-11-03 23:31:45.749 +01:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Table (MyShop)'
+2024-11-03 23:31:45.758 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Item/Table - 200 null text/html; charset=utf-8 263.2306ms
+2024-11-03 23:31:45.794 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:45.796 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 2.2693ms
+2024-11-03 23:31:45.797 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-11-03 23:31:47.877 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Item/Update/1 - null null
+2024-11-03 23:31:47.896 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-11-03 23:31:47.905 +01:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-11-03 23:31:47.906 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Item/Update/1 - 302 0 null 28.8392ms
+2024-11-03 23:31:47.913 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Identity/Account/Login?ReturnUrl=%2FItem%2FUpdate%2F1 - null null
+2024-11-03 23:31:47.916 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-03 23:31:47.973 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-03 23:31:48.065 +01:00 [INF] Executing handler method MyShop.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-03 23:31:48.083 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-03 23:31:48.087 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-03 23:31:48.096 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-03 23:31:48.097 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-03 23:31:48.256 +01:00 [INF] Executed page /Account/Login in 282.6547ms
+2024-11-03 23:31:48.257 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-03 23:31:48.257 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Identity/Account/Login?ReturnUrl=%2FItem%2FUpdate%2F1 - 200 null text/html; charset=utf-8 343.772ms
+2024-11-03 23:31:48.316 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:48.317 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2024-11-03 23:31:48.318 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2024-11-03 23:31:48.319 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 3.1619ms
+2024-11-03 23:31:48.319 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 1.4988ms
+2024-11-03 23:31:48.319 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 1.0676ms
+2024-11-03 23:31:48.319 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-11-03 23:31:48.319 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404
+2024-11-03 23:31:48.320 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2024-11-03 23:31:49.795 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/Identity/Account/Login?ReturnUrl=%2FItem%2FUpdate%2F1 - application/x-www-form-urlencoded 264
+2024-11-03 23:31:49.803 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-03 23:31:49.805 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-03 23:31:49.850 +01:00 [INF] Executing handler method MyShop.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2024-11-03 23:31:50.848 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-11-03 23:31:50.855 +01:00 [INF] User logged in.
+2024-11-03 23:31:50.857 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-11-03 23:31:50.859 +01:00 [INF] Executing LocalRedirectResult, redirecting to /Item/Update/1.
+2024-11-03 23:31:50.860 +01:00 [INF] Executed page /Account/Login in 1055.0929ms
+2024-11-03 23:31:50.860 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-03 23:31:50.865 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/Identity/Account/Login?ReturnUrl=%2FItem%2FUpdate%2F1 - 302 0 null 1070.0655ms
+2024-11-03 23:31:50.870 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Item/Update/1 - null null
+2024-11-03 23:31:50.896 +01:00 [INF] Executing endpoint 'MyShop.Controllers.ItemController.Update (MyShop)'
+2024-11-03 23:31:50.906 +01:00 [INF] Route matched with {action = "Update", controller = "Item", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller MyShop.Controllers.ItemController (MyShop).
+2024-11-03 23:31:50.962 +01:00 [INF] Executing ViewResult, running view Update.
+2024-11-03 23:31:51.048 +01:00 [INF] Executed ViewResult - view Update executed in 87.495ms.
+2024-11-03 23:31:51.048 +01:00 [INF] Executed action MyShop.Controllers.ItemController.Update (MyShop) in 141.8701ms
+2024-11-03 23:31:51.049 +01:00 [INF] Executed endpoint 'MyShop.Controllers.ItemController.Update (MyShop)'
+2024-11-03 23:31:51.049 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Item/Update/1 - 200 null text/html; charset=utf-8 179.0398ms
+2024-11-03 23:31:51.114 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:51.119 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 4.5013ms
+2024-11-03 23:31:51.119 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-11-03 23:31:54.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Customer/Table - null null
+2024-11-03 23:31:54.036 +01:00 [INF] Executing endpoint 'MyShop.Controllers.CustomerController.Table (MyShop)'
+2024-11-03 23:31:54.045 +01:00 [INF] Route matched with {action = "Table", controller = "Customer", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller MyShop.Controllers.CustomerController (MyShop).
+2024-11-03 23:31:54.118 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-03 23:31:54.201 +01:00 [INF] Executed ViewResult - view Table executed in 84.8714ms.
+2024-11-03 23:31:54.201 +01:00 [INF] Executed action MyShop.Controllers.CustomerController.Table (MyShop) in 155.7841ms
+2024-11-03 23:31:54.201 +01:00 [INF] Executed endpoint 'MyShop.Controllers.CustomerController.Table (MyShop)'
+2024-11-03 23:31:54.202 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Customer/Table - 200 null text/html; charset=utf-8 175.5226ms
+2024-11-03 23:31:54.268 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:54.271 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 2.9659ms
+2024-11-03 23:31:54.271 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-11-03 23:31:54.902 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/Order/Table - null null
+2024-11-03 23:31:54.905 +01:00 [INF] Executing endpoint 'MyShop.Controllers.OrderController.Table (MyShop)'
+2024-11-03 23:31:54.913 +01:00 [INF] Route matched with {action = "Table", controller = "Order", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table() on controller MyShop.Controllers.OrderController (MyShop).
+2024-11-03 23:31:54.939 +01:00 [INF] Executing ViewResult, running view Table.
+2024-11-03 23:31:55.066 +01:00 [INF] Executed ViewResult - view Table executed in 129.0741ms.
+2024-11-03 23:31:55.066 +01:00 [INF] Executed action MyShop.Controllers.OrderController.Table (MyShop) in 153.104ms
+2024-11-03 23:31:55.067 +01:00 [INF] Executed endpoint 'MyShop.Controllers.OrderController.Table (MyShop)'
+2024-11-03 23:31:55.068 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/Order/Table - 200 null text/html; charset=utf-8 166.1014ms
+2024-11-03 23:31:55.103 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:55.105 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 3.12ms
+2024-11-03 23:31:55.106 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
+2024-11-03 23:31:56.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/ - null null
+2024-11-03 23:31:56.345 +01:00 [INF] Executing endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-11-03 23:31:56.345 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyShop.Controllers.HomeController (MyShop).
+2024-11-03 23:31:56.346 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-03 23:31:56.348 +01:00 [INF] Executed ViewResult - view Index executed in 2.769ms.
+2024-11-03 23:31:56.349 +01:00 [INF] Executed action MyShop.Controllers.HomeController.Index (MyShop) in 3.4923ms
+2024-11-03 23:31:56.349 +01:00 [INF] Executed endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-11-03 23:31:56.349 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/ - 200 null text/html; charset=utf-8 6.2907ms
+2024-11-03 23:31:56.408 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-11-03 23:31:56.410 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 2.1911ms
+2024-11-03 23:31:56.410 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404

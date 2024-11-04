@@ -1,40 +1,128 @@
-// Purpose: Contains the ItemController class which is responsible for handling requests to the Item model.
-
-// using directive is used to include the System namespace in the file
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MyShop.DAL;
 using MyShop.Models;
+using MyShop.ViewModels;
 
-namespace MyShop.Controllers; // namespace declaration
-
-    // Creates a list of items in a mock fashion.
-    // Sets a value in ViewBag to pass additional data to the View.
-    // Returns a View that will render the list of items.
+namespace MyShop.Controllers;
 
 public class ItemController : Controller
 {
-    public IActionResult Table()
+    private readonly IItemRepository _itemRepository;
+    private readonly ILogger<ItemController> _logger;
+
+    public ItemController(IItemRepository itemRepository, ILogger<ItemController> logger)
     {
-        var items = new List<Item>(); // creates a new list of items
-        var item1 = new Item(); // creates a new item object
-        item1.ItemId = 1;
-        item1.Name = "Pizza";
-        item1.Price = 60;
+        _itemRepository = itemRepository;
+        _logger = logger;
+    }
 
-        var item2 = new Item
+    public async Task<IActionResult> Table()
+    {
+        var items = await _itemRepository.GetAll();
+        if (items == null)
         {
-            ItemId = 2,
-            Name = "Fried Chicken Leg",
-            Price = 15
-        };
+            _logger.LogError("[ItemController] Item list not found while executing _itemRepository.GetAll()");
+            return NotFound("Item list not found");
+        }
+        var itemsViewModel = new ItemsViewModel(items, "Table");
+        return View(itemsViewModel);
+    }
 
-        items.Add(item1);
-        items.Add(item2);
+    public async Task<IActionResult> Grid()
+    {
+        var items = await _itemRepository.GetAll();
+        if (items == null)
+        {
+            _logger.LogError("[ItemController] Item list not found while executing _itemRepository.GetAll()");
+            return NotFound("Item list not found");
+        }
+        var itemsViewModel = new ItemsViewModel(items, "Grid");
+        return View(itemsViewModel);
+    }
 
-        ViewBag.CurrentViewName = "List of Shop Items";
-        return View(items);
+    public async Task<IActionResult> Details(int id)
+    {
+        var item = await _itemRepository.GetItemById(id);
+        if (item == null)
+        {
+            _logger.LogError("[ItemController] Item not found for the ItemId {ItemId:0000}", id);
+            return NotFound("Item not found for the ItemId");
+        }
+        return View(item);
+    }
+
+    [HttpGet]
+    [Authorize]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> Create(Item item)
+    {
+        if (ModelState.IsValid)
+        {
+            bool returnOk = await _itemRepository.Create(item);
+            if (returnOk)
+                return RedirectToAction(nameof(Table));
+        }
+        _logger.LogWarning("[ItemController] Item creation failed {@item}", item);
+        return View(item);
+    }
+
+    [HttpGet]
+    [Authorize]
+    public async Task<IActionResult> Update(int id)
+    {
+        var item = await _itemRepository.GetItemById(id);
+        if (item == null)
+        {
+            _logger.LogError("[ItemController] Item not found when updating the ItemId {ItemId:0000}", id);
+            return BadRequest("Item not found for the ItemId");
+        }
+        return View(item);
+    }
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> Update(Item item)
+    {
+        if (ModelState.IsValid)
+        {
+            bool returnOk = await _itemRepository.Update(item);
+            if (returnOk)
+                return RedirectToAction(nameof(Table));
+        }
+        _logger.LogWarning("[ItemController] Item update failed {@item}", item);
+        return View(item);
+    }
+
+    [HttpGet]
+    [Authorize]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var item = await _itemRepository.GetItemById(id);
+        if (item == null)
+        {
+            _logger.LogError("[ItemController] Item not found for the ItemId {ItemId:0000}", id);
+            return BadRequest("Item not found for the ItemId");
+        }
+        return View(item);
+    }
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        bool returnOk = await _itemRepository.Delete(id);
+        if (!returnOk)
+        {
+            _logger.LogError("[ItemController] Item deletion failed for the ItemId {ItemId:0000}", id);
+            return BadRequest("Item deletion failed");
+        }
+        return RedirectToAction(nameof(Table));
     }
 }

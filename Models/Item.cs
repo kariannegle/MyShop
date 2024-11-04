@@ -1,15 +1,23 @@
-using System; //provides a way to use classes in the System namespace
+using System.ComponentModel.DataAnnotations;
+
 namespace MyShop.Models
 {
-
-    public class Item // class is a blueprint for creating objects
+    public class Item
     {
-        // Properties
-        // variables must begin with upper case to follow C# convention
         public int ItemId { get; set; }
-        public string Name { get; set; } = string.Empty; // mandatory to have a value
+
+        [RegularExpression(@"[0-9a-zA-ZæøåÆØÅ. \-]{2,20}", ErrorMessage = "The Name must be numbers or letters and between 2 to 20 characters.")]
+        [Display(Name = "Item name")]
+        public string Name { get; set; } = string.Empty;
+
+        [Range(0.01, double.MaxValue, ErrorMessage = "The Price must be greater than 0.")]
         public decimal Price { get; set; }
-        public string? Description { get; set; } // ? means it can be null
-        public string? ImageUrl { get; set; } 
+
+        [StringLength(200)]
+        public string? Description { get; set; }
+
+        public string? ImageUrl { get; set; }
+        // navigation property
+        public virtual List<OrderItem>? OrderItems { get; set; }
     }
 }

@@ -1,0 +1,17 @@
+2024-10-30 00:54:49.007 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-30 00:54:49.203 +01:00 [INF] Now listening on: https://localhost:7022
+2024-10-30 00:54:49.208 +01:00 [INF] Now listening on: http://localhost:5057
+2024-10-30 00:54:49.222 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 00:54:49.227 +01:00 [INF] Hosting environment: Development
+2024-10-30 00:54:49.231 +01:00 [INF] Content root path: C:\Users\karia\ITPE3200\ShopMVC\MyShop\MyShop
+2024-10-30 00:54:49.474 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/ - null null
+2024-10-30 00:54:49.500 +01:00 [INF] Executing endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-10-30 00:54:49.514 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyShop.Controllers.HomeController (MyShop).
+2024-10-30 00:54:49.527 +01:00 [INF] Executing ViewResult, running view Index.
+2024-10-30 00:54:49.627 +01:00 [INF] Executed ViewResult - view Index executed in 100.5366ms.
+2024-10-30 00:54:49.630 +01:00 [INF] Executed action MyShop.Controllers.HomeController.Index (MyShop) in 115.2838ms
+2024-10-30 00:54:49.630 +01:00 [INF] Executed endpoint 'MyShop.Controllers.HomeController.Index (MyShop)'
+2024-10-30 00:54:49.634 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/ - 200 null text/html; charset=utf-8 162.3983ms
+2024-10-30 00:54:49.655 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - null null
+2024-10-30 00:54:49.661 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/js/jquery.min.js - 404 0 null 5.8655ms
+2024-10-30 00:54:49.662 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5057/js/jquery.min.js, Response status code: 404
